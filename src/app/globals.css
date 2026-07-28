@@ -251,16 +251,6 @@ body {
   animation: caret-blink 1s step-end infinite;
 }
 
-@media (max-width: 900px) {
-  .code-stream-panel {
-    display: none;
-  }
-
-  .code-float-5 {
-    display: none;
-  }
-}
-
 @keyframes aurora-shift {
   0%,
   100% {
@@ -305,7 +295,38 @@ body {
 }
 
 .section-pad {
-  padding-inline: clamp(1.25rem, 4vw, 4rem);
+  padding-inline: clamp(1rem, 4vw, 4rem);
+}
+
+@media (max-width: 640px) {
+  .hero-orb {
+    filter: blur(40px);
+  }
+
+  .hero-orb-a,
+  .hero-orb-b,
+  .hero-orb-c {
+    width: min(70vw, 260px);
+    height: min(70vw, 260px);
+  }
+
+  .code-float {
+    display: none !important;
+  }
+
+  .code-stream-panel {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .code-stream-panel {
+    display: none;
+  }
+
+  .code-float-5 {
+    display: none;
+  }
 }
 
 .reveal {

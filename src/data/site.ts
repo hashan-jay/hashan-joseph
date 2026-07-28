@@ -12,13 +12,14 @@ export type Project = {
 
 export const site = {
   name: "Hashan Joseph",
-  role: "Software Engineer",
+  role: "Full-Stack Engineer",
   tagline:
     "I design and ship reliable web products — from clean APIs to interfaces people enjoy using.",
   location: "Wattala, Sri Lanka",
   email: "hashanjayy@gmail.com",
   profileImage: "/profile.png",
-  resumeUrl: "#",
+  resumeUrl:
+    "mailto:hashanjayy@gmail.com?subject=CV%20Request%20%E2%80%94%20Recruitment%20Inquiry&body=Hi%20Hashan%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20learn%20more%20about%20your%20experience.%0A%0ACould%20you%20please%20share%20your%20latest%20CV%2Fresume%3F%20We%20are%20currently%20hiring%20for%20a%20role%20that%20may%20be%20a%20strong%20fit%2C%20and%20I%E2%80%99d%20appreciate%20the%20opportunity%20to%20discuss%20it%20further.%0A%0ACompany%3A%20%0ARole%3A%20%0ABest%20time%20to%20connect%3A%20%0A%0AThank%20you%2C%0A%5BYour%20Name%5D%0A%5BYour%20Title%20%2F%20Company%5D%0A%5BContact%20Number%5D",
   social: {
     github: "https://github.com/hashan-jay",
     linkedin: "https://www.linkedin.com/in/hashanjayy",
@@ -26,7 +27,7 @@ export const site = {
   },
   about: {
     paragraphs: [
-      "I'm a software engineer who cares about clarity — in code, in systems, and in the products people use every day. I work across the stack, with a focus on TypeScript, React, and well-structured backends.",
+      "I'm a full-stack engineer who cares about clarity — in code, in systems, and in the products people use every day. I work across the stack, with a focus on TypeScript, React, and well-structured backends.",
       "Outside of shipping features, I enjoy mentoring, writing technical notes, and refining developer experience so teams can move faster without sacrificing quality.",
     ],
   },
@@ -44,39 +45,33 @@ export const site = {
         "PHP",
         "R",
         "SQL",
-        "JavaScript (ES6)",
         "XML",
         "TypeScript",
         "HTML5",
         "CSS3",
+        "Vanilla JavaScript (ES6+)",
       ],
-      libraries: [
+      coreFrameworksAndLibraries: [
+        "ASP.NET Core",
+        "Next.js",
+        "Express.js",
         "React.js",
         "React Router",
         "Redux",
-        "jQuery",
-        "ggplot2",
         "Entity Framework Core",
         "Bootstrap",
         "Tailwind CSS",
         "Framer Motion",
-      ],
-      frameworks: [
-        "ASP.NET Core",
-        "Next.js",
-        "Express.js",
-        "Node.js",
         "WordPress",
         "Joomla",
         "Odoo",
       ],
     },
-    databases: ["MS SQL Server", "MySQL", "MongoDB", "MariaDB"],
-    architecture: ["Web API & MVC Architecture"],
-    analytics: ["Power BI", "R Studio"],
+    databases: ["MS SQL Server", "MySQL", "MongoDB", "MariaDB", "SQLite"],
+    analytics: ["Power BI", "R Studio", "ggplot2", "dplyr", "tidyr"],
     seo: ["Google Analytics (GA4)", "Google Search Console (GSC)"],
     testing: ["Postman", "Scalar", "Swagger"],
-    deployments: ["Azure", "Vercel", "Docker"],
+    deployments: ["Azure", "Vercel", "Docker", "GitHub"],
     mobile: {
       note: "Experience in Mobile Application development using Android Studio (Java, XML).",
       tools: ["Android Studio", "Java", "XML"],
@@ -89,12 +84,14 @@ export const site = {
       "Python IDE",
       "NetBeans",
       "Cursor",
+      "Git",
     ],
   },
   experience: [
     {
       company: "Zyntaks",
       role: "Full Stack Engineer",
+      workMethod: "Founder - Contract based",
       period: "Jun 2026 — Present",
       description:
         "Building and shipping full-stack web products for clients — from modern marketing sites to production web applications.",
@@ -102,6 +99,7 @@ export const site = {
     {
       company: "43V3R Creations",
       role: "Web Developer",
+      workMethod: "Contract based",
       period: "Aug 2024 — May 2025",
       description:
         "Developed and maintained web experiences, collaborating on UI implementation, integrations, and delivery for client projects.",
@@ -109,6 +107,7 @@ export const site = {
     {
       company: "Affno Asia Pacific (Pvt) Ltd",
       role: "Software Engineering Intern",
+      workMethod: "Hybrid - Full time",
       period: "Feb 2024 — May 2024",
       description:
         "Contributed to software engineering workflows as an intern — supporting development tasks, testing, and team delivery practices.",
@@ -172,7 +171,7 @@ export const site = {
         "Enterprise resource planning web application for fitness operations. Full project details coming soon — currently not hosted live.",
       stack: ["React", "ASP.NET Core Web API", "SQL Server"],
       year: 2026,
-      source: "#",
+      source: "https://github.com/hashan-jay/RoarFitnessERP",
       image: "/projects/roar-fitness.png",
       featured: true,
       status: "private",

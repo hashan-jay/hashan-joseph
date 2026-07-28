@@ -2,7 +2,7 @@
 
 # Hashan Joseph — Portfolio
 
-### Software Engineer · Next.js Portfolio
+### Full-Stack Engineer · Next.js Portfolio
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
@@ -143,7 +143,7 @@ All portfolio copy lives in one file:
 // src/data/site.ts
 export const site = {
   name: "Your Name",
-  role: "Software Engineer",
+  role: "Full-Stack Engineer",
   tagline: "Your short pitch...",
   email: "you@example.com",
   // projects, skills, experience, social links...
@@ -236,7 +236,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-**Hashan Joseph** — Software Engineer
+**Hashan Joseph** — Full-Stack Engineer
 
 - Email: [hashanjayy@gmail.com](mailto:hashanjayy@gmail.com)
 - GitHub: [github.com/hashan-jay](https://github.com/hashan-jay)

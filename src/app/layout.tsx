@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import { site } from "@/data/site";
 import "./globals.css";
@@ -26,6 +26,12 @@ export const metadata: Metadata = {
   description: site.tagline,
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#050505",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,8 +41,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${display.variable} ${body.variable} ${mono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full bg-background font-sans text-foreground">
+      <body
+        className="min-h-full overflow-x-hidden bg-background font-sans text-foreground"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>

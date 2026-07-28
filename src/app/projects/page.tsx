@@ -14,8 +14,8 @@ export default function ProjectsPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-dvh bg-background pt-24">
-        <section className="section-pad border-b border-border pb-16 pt-10">
+      <main className="min-h-dvh overflow-x-hidden bg-background pt-20 sm:pt-24">
+        <section className="section-pad border-b border-border pb-10 pt-8 sm:pb-16 sm:pt-10">
           <div className="mx-auto max-w-6xl">
             <Link
               href="/#projects"
@@ -23,18 +23,18 @@ export default function ProjectsPage() {
             >
               ← Back to home
             </Link>
-            <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-foreground sm:text-6xl">
+            <h1 className="mt-5 font-display text-3xl font-semibold tracking-tight text-foreground sm:mt-6 sm:text-5xl lg:text-6xl">
               All Projects
             </h1>
-            <p className="mt-4 max-w-2xl text-lg text-muted">
+            <p className="mt-3 max-w-2xl text-base text-muted sm:mt-4 sm:text-lg">
               A full archive of shipped and in-progress work — including live
               client sites and private enterprise builds.
             </p>
           </div>
         </section>
 
-        <section className="section-pad py-16">
-          <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <section className="section-pad py-10 sm:py-16">
+          <div className="mx-auto grid max-w-6xl gap-6 sm:gap-8 md:grid-cols-2 xl:grid-cols-3">
             {allProjects.map((project, index) => (
               <ProjectCard
                 key={project.title}
