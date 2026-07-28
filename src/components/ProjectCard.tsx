@@ -115,18 +115,28 @@ export function ProjectCard({
               Details coming soon
             </span>
           )}
-          <a
-            href={project.source || "#"}
-            target={project.source && project.source !== "#" ? "_blank" : undefined}
-            rel={
-              project.source && project.source !== "#"
-                ? "noopener noreferrer"
-                : undefined
-            }
-            className="rounded-full border border-border px-4 py-2.5 text-center text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
-          >
-            Source Code →
-          </a>
+          {project.sourceLocked ? (
+            <span
+              aria-disabled="true"
+              title="Source code is private for this commercial project"
+              className="cursor-not-allowed rounded-full border border-border/60 px-4 py-2.5 text-center text-sm font-medium text-muted/50"
+            >
+              Source Code →
+            </span>
+          ) : (
+            <a
+              href={project.source || "#"}
+              target={project.source && project.source !== "#" ? "_blank" : undefined}
+              rel={
+                project.source && project.source !== "#"
+                  ? "noopener noreferrer"
+                  : undefined
+              }
+              className="rounded-full border border-border px-4 py-2.5 text-center text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+            >
+              Source Code →
+            </a>
+          )}
         </div>
       </div>
     </article>

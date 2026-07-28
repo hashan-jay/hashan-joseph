@@ -5,6 +5,7 @@ export type Project = {
   year: number;
   live?: string;
   source?: string;
+  sourceLocked?: boolean;
   image?: string;
   featured?: boolean;
   status?: "live" | "private";
@@ -151,6 +152,7 @@ export const site = {
       year: 2026,
       live: "https://zyntaks.lk",
       source: "#",
+      sourceLocked: true,
       image: "/projects/zyntaks.png",
       featured: true,
       status: "live",
@@ -163,6 +165,7 @@ export const site = {
       year: 2026,
       live: "https://fitwithshyama.xyz",
       source: "#",
+      sourceLocked: true,
       image: "/projects/fitwithshyama.png",
       featured: true,
       status: "live",
@@ -184,7 +187,7 @@ export const site = {
         "Nature-themed Android mobile app for EcoStay Retreat — rooms, activities, bookings, calendar, and guest profile flows in a single experience.",
       stack: ["Android Studio", "Java", "XML"],
       year: 2026,
-      source: "#",
+      source: "https://github.com/hashan-jay/ecostay-retreat-mobile-app",
       image: "/projects/ecostay-retreat.png",
       featured: false,
       status: "private",
@@ -195,12 +198,30 @@ export const site = {
         "A browser-based 2D jump-and-run game built with JavaScript — focused on gameplay loops, collision handling, and interactive controls.",
       stack: ["JavaScript", "HTML5", "CSS3"],
       year: 2023,
-      source: "#",
+      source: "https://github.com/hashan-jay/fire-jumpers-by-hashanjay",
+      image: "/projects/fire-jumpers.png",
+      featured: false,
+      status: "private",
+    },
+    {
+      title: "SkillPro Institute - Student Management System",
+      description:
+        "Full-stack student management web system for SkillPro Institute — courses, registration, and institute workflows with a MySQL-backed data layer.",
+      stack: ["TypeScript", "JavaScript", "MySQL", "HTML5"],
+      year: 2025,
+      source: "https://github.com/hashan-jay/skillpro-institute-web-system",
+      image: "/projects/skillpro-institute.png",
       featured: false,
       status: "private",
     },
   ] satisfies Project[],
 } as const;
 
-export const featuredProjects = site.projects.filter((p) => p.featured);
-export const allProjects = site.projects;
+export const featuredProjects = site.projects
+  .filter((p) => p.featured)
+  .slice()
+  .sort((a, b) => b.year - a.year);
+
+export const allProjects = site.projects
+  .slice()
+  .sort((a, b) => b.year - a.year);
