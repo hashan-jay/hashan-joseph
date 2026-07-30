@@ -70,7 +70,7 @@ export const site = {
     },
     databases: ["MS SQL Server", "MySQL", "MongoDB", "SQLite"],
     analytics: ["Power BI", "R Studio", "ggplot2", "dplyr", "tidyr"],
-    seo: ["Google Analytics (GA4)", "Google Search Console (GSC)"],
+    seo: ["Google Analytics (GA4)", "Google Search Console (GSC)", "Ahrefs"],
     testing: ["Postman", "Scalar", "Swagger"],
     deployments: ["Azure", "Vercel", "Docker", "GitHub"],
     mobile: {
